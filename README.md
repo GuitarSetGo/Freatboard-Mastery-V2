@@ -25,3 +25,11 @@ Just open `index.html` in your browser.
 
 ```bash
 npx serve .
+
+**Joshua Gonzalez**
+
+*   [GitHub Profile](https://github.com/GuitarSetGo)
+*   [LinkedIn](https://www.linkedin.com/in/josh4dev)
+
+---
+*© 2026 - Fretboard Mastery v2.0*
