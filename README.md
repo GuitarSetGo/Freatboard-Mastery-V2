@@ -23,7 +23,12 @@ Just open `index.html` in your browser.
 
 > For microphone access, use a local server or HTTPS (required by browsers).
 
-```bash
-npx serve  .
+## 👨‍💻 Author
 
+**Joshua Gonzalez**
 
+* [GitHub Profile](https://github.com/GuitarSetGo)
+* [LinkedIn](https://www.linkedin.com/in/josh4dev)
+
+---
+*© 2026 - Fretboard Mastery v2.0*
