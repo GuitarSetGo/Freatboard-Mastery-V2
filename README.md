@@ -1,5 +1,9 @@
 # [🎸 Fretboard Mastery v2.0](https://guitarsetgo.github.io/Freatboard-Mastery-V2/)
 
+![Version](https://img.shields.io/badge/version-2.0.0-blueviolet)
+![Technology](https://img.shields.io/badge/tech-Web_Audio_API-yellow)
+![Status](https://img.shields.io/badge/status-active-success)
+
 Guitar note trainer that runs in the browser. Practice identifying notes on the fretboard by clicking or playing directly with your guitar via microphone / audio interface.
 
 ## Stack
