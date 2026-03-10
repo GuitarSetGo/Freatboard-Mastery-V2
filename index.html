@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretboard Mastery 🎸</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎸 FRETBOARD MASTERY</h1>
+        <p class="subtitle">Guitar Note Trainer — Audio Interface Edition</p>
+
+        <div id="audioStatus">
+            <div class="dot"></div>
+            <span id="audioStatusText">Microphone / Audio Interface not connected</span>
+        </div>
+
+        <div class="button-row">
+            <button class="ctrl-btn" id="micButton" onclick="toggleMic()">🎤 Connect Audio</button>
+            <button class="ctrl-btn" id="pauseButton" onclick="pauseGame()">⏸ Pause</button>
+        </div>
+
+        <div class="button-row">
+            <button class="startButton" data-interval="4000" onclick="selectDifficulty(this)">🌱 Explorer</button>
+            <button class="startButton" data-interval="3000" onclick="selectDifficulty(this)">⚡ Hero</button>
+            <button class="startButton" data-interval="2000" onclick="selectDifficulty(this)">🔥 Legend</button>
+        </div>
+
+        <div id="modeIndicator">Select difficulty to start</div>
+
+        <div id="pitchInfo">
+            <div class="pitch-card">
+                <div class="label">Frequency</div>
+                <div class="value" id="freqValue">— Hz</div>
+            </div>
+            <div class="pitch-card" id="detectedNoteCard">
+                <div class="label">Detected Note</div>
+                <div class="value" id="detectedNoteValue">—</div>
+            </div>
+            <div class="pitch-card">
+                <div class="label">Target Note</div>
+                <div class="value" id="targetNoteValue">—</div>
+            </div>
+        </div>
+
+        <div id="volumeMeter">
+            <span class="label">VOL</span>
+            <div id="volumeBar"><div id="volumeFill"></div></div>
+        </div>
+
+        <div id="noteDisplay">—</div>
+
+        <div class="stats-row">
+            <div class="stat-item">Score: <span id="scoreValue">0</span></div>
+            <div class="stat-item">Remaining: <span id="attemptsValue">—</span></div>
+            <div class="stat-item">Accuracy: <span id="accuracyValue">—</span></div>
+        </div>
+
+        <div id="gameOverPanel">
+            <h2>GAME OVER</h2>
+            <p>Final Score</p>
+            <div class="final-score" id="finalScore">0 / 10</div>
+            <p id="finalMsg" style="margin-top:8px; color:#888;"></p>
+        </div>
+
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="fretboard-wrapper">
+            <div id="fretboard"></div>
+            <div id="fretNumbers"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <strong>Joshua Gonzalez</strong></p>
+        <p>© 2026 — Freatboard Mastery v2.0</p>
+        <p>
+            <a href="https://github.com/GuitarSetGo" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/josh4dev" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
